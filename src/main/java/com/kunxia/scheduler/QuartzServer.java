@@ -23,7 +23,7 @@ public class QuartzServer {
 	public void start(){
 		 try {
 		     logger.info("Starting Scheduler "+version+"...");
-             Scheduler scheduler = new StdSchedulerFactory("com/kunxia/scheduler/config/quartz.properties").getScheduler();
+             Scheduler scheduler = new StdSchedulerFactory("quartz.properties").getScheduler();
              scheduler.start();
         } catch (SchedulerException e) {
              logger.error(e.getMessage());

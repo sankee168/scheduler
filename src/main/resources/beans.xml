@@ -9,13 +9,13 @@
 	<context:component-scan base-package="com.kunxia.scheduler" />
 
 	<context:property-placeholder
-		location="com/kunxia/scheduler/config/application.properties" />
+		location="classpath:application.properties" />
 	<bean class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
 	<property name="targetClass" value="org.springframework.util.Log4jConfigurer" />
 	<property name="targetMethod" value="initLogging" />
 	<property name="arguments">
 		<list>
-			<value>classpath:com/kunxia/scheduler/config/log4j.properties</value>
+			<value>classpath:log4j.properties</value>
 		</list>
 	</property>
 </bean>

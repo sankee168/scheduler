@@ -15,7 +15,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class App {
 	
 		private static final Logger logger = Logger.getLogger(App.class);
-		public static ApplicationContext appContext = new ClassPathXmlApplicationContext("com/kunxia/scheduler/config/beans.xml");
+		public static ApplicationContext appContext = new ClassPathXmlApplicationContext("classpath:beans.xml");
 		
 	
 	public static void main(String[] args) {

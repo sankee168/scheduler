@@ -24,7 +24,7 @@ public class Test {
     
             			//System.out.println(scheduler.getJobDetail(job.getKey()));
             			scheduler.deleteJob(new JobKey("checkoutJob_1", "notifyJobs"));
-            			scheduler.deleteJob(new JobKey("checkinJob_1", "notifyJobs"));
+            			scheduler.deleteJob(new JobKey("checkoutJob_2", "notifyJobs"));
             			//scheduler.deleteJob(new JobKey("checkoutJob_10", "notifyJobs"));
             			//scheduler.deleteJob(new JobKey("checkoutJob_4", "notifyJobs"));
             			//scheduler.deleteJob(new JobKey("checkoutJob_5", "notifyJobs"));
