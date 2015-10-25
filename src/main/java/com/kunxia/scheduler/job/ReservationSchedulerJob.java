@@ -38,7 +38,7 @@ public class ReservationSchedulerJob extends QuartzJobBean {
 		ReservationDAOImpl reservationDAO = (ReservationDAOImpl) App.appContext.getBean("reservationDAO");
 		List<Reservation> reservations = reservationDAO.findAllReservations();
 		try {
-			Scheduler scheduler = new StdSchedulerFactory("classpath:quartz.properties").getScheduler();
+			Scheduler scheduler = new StdSchedulerFactory("quartz.properties").getScheduler();
 			for(Reservation r:reservations){
 				if(StringUtils.isEmpty(r.getQuartzRef())){
 					logger.info("Registering Reservation: "+r);
