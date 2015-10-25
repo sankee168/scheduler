@@ -1,0 +1,352 @@
+Finished creating instance of bean 'org.springframework.beans.factory.config.MethodInvokingFactoryBean#0'
+Creating shared instance of singleton bean 'jdbcTemplate'
+Creating instance of bean 'jdbcTemplate'
+Eagerly caching bean 'jdbcTemplate' to allow for resolving potential circular references
+Creating shared instance of singleton bean 'dataSource'
+Creating instance of bean 'dataSource'
+Eagerly caching bean 'dataSource' to allow for resolving potential circular references
+Loaded JDBC driver: com.mysql.jdbc.Driver
+Finished creating instance of bean 'dataSource'
+Invoking afterPropertiesSet() on bean with name 'jdbcTemplate'
+Finished creating instance of bean 'jdbcTemplate'
+Autowiring by type from bean name 'reservationDAOImpl' to bean named 'jdbcTemplate'
+Finished creating instance of bean 'reservationDAOImpl'
+Creating shared instance of singleton bean 'reservationSchedulerJob'
+Creating instance of bean 'reservationSchedulerJob'
+Eagerly caching bean 'reservationSchedulerJob' to allow for resolving potential circular references
+Invoking afterPropertiesSet() on bean with name 'reservationSchedulerJob'
+Finished creating instance of bean 'reservationSchedulerJob'
+Creating shared instance of singleton bean 'quartzServer'
+Creating instance of bean 'quartzServer'
+Registered injected element on class [com.kunxia.scheduler.QuartzServer]: AutowiredFieldElement for private java.lang.String com.kunxia.scheduler.QuartzServer.version
+Eagerly caching bean 'quartzServer' to allow for resolving potential circular references
+Processing injected element of bean 'quartzServer': AutowiredFieldElement for private java.lang.String com.kunxia.scheduler.QuartzServer.version
+Searching for key 'scheduler.version' in [environmentProperties]
+Searching for key 'scheduler.version' in [systemProperties]
+Searching for key 'scheduler.version' in [systemEnvironment]
+Could not find key 'scheduler.version' in any property source. Returning [null]
+Searching for key 'scheduler.version' in [localProperties]
+Found key 'scheduler.version' in [localProperties] with type [String] and value '1.0.0'
+Finished creating instance of bean 'quartzServer'
+Creating shared instance of singleton bean 'twilloClient'
+Creating instance of bean 'twilloClient'
+Registered injected element on class [com.kunxia.scheduler.twillo.TwilloClient]: AutowiredFieldElement for private java.lang.String com.kunxia.scheduler.twillo.TwilloClient.accountSID
+Registered injected element on class [com.kunxia.scheduler.twillo.TwilloClient]: AutowiredFieldElement for private java.lang.String com.kunxia.scheduler.twillo.TwilloClient.authToken
+Eagerly caching bean 'twilloClient' to allow for resolving potential circular references
+Processing injected element of bean 'twilloClient': AutowiredFieldElement for private java.lang.String com.kunxia.scheduler.twillo.TwilloClient.accountSID
+Searching for key 'twillo.accountsid' in [environmentProperties]
+Searching for key 'twillo.accountsid' in [systemProperties]
+Searching for key 'twillo.accountsid' in [systemEnvironment]
+Could not find key 'twillo.accountsid' in any property source. Returning [null]
+Searching for key 'twillo.accountsid' in [localProperties]
+Found key 'twillo.accountsid' in [localProperties] with type [String] and value 'ACc845241619657ff52341b393337f56c3'
+Processing injected element of bean 'twilloClient': AutowiredFieldElement for private java.lang.String com.kunxia.scheduler.twillo.TwilloClient.authToken
+Searching for key 'twillo.authtoken' in [environmentProperties]
+Searching for key 'twillo.authtoken' in [systemProperties]
+Searching for key 'twillo.authtoken' in [systemEnvironment]
+Could not find key 'twillo.authtoken' in any property source. Returning [null]
+Searching for key 'twillo.authtoken' in [localProperties]
+Found key 'twillo.authtoken' in [localProperties] with type [String] and value 'd203b0cf659dcb366fbb9eb774ffe4c9'
+Finished creating instance of bean 'twilloClient'
+Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+Creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+Eagerly caching bean 'org.springframework.context.event.internalEventListenerProcessor' to allow for resolving potential circular references
+Finished creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+Creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+Eagerly caching bean 'org.springframework.context.event.internalEventListenerFactory' to allow for resolving potential circular references
+Finished creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+Returning cached instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+Returning cached instance of singleton bean 'org.springframework.beans.factory.config.MethodInvokingFactoryBean#0'
+Returning cached instance of singleton bean 'dataSource'
+Creating shared instance of singleton bean 'reservationDAO'
+Creating instance of bean 'reservationDAO'
+Registered injected element on class [com.kunxia.scheduler.dao.ReservationDAOImpl]: AutowiredFieldElement for private org.springframework.jdbc.core.JdbcTemplate com.kunxia.scheduler.dao.ReservationDAOImpl.jdbcTemplate
+Eagerly caching bean 'reservationDAO' to allow for resolving potential circular references
+Processing injected element of bean 'reservationDAO': AutowiredFieldElement for private org.springframework.jdbc.core.JdbcTemplate com.kunxia.scheduler.dao.ReservationDAOImpl.jdbcTemplate
+Returning cached instance of singleton bean 'jdbcTemplate'
+Autowiring by type from bean name 'reservationDAO' to bean named 'jdbcTemplate'
+Finished creating instance of bean 'reservationDAO'
+Returning cached instance of singleton bean 'jdbcTemplate'
+Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+Returning cached instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@318ba8c8]
+Returning cached instance of singleton bean 'lifecycleProcessor'
+Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties]
+Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment]
+Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]
+Returning cached instance of singleton bean 'quartzServer'
+Starting Scheduler 1.0.0...
+MLog clients using log4j logging.
+Initializing c3p0-0.9.1.1 [built 15-March-2007 01:32:31; debug? true; trace: 10]
+MBean: com.mchange.v2.c3p0:type=PooledDataSource[1hge73f9c1820976i7ehyw|1a451d4d] registered.
+Using default implementation for ThreadExecutor
+Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+Quartz Scheduler v.2.2.1 created.
+JobFactory set to: org.quartz.simpl.SimpleJobFactory@5542c4ed
+Using thread monitor-based data access locking (synchronization).
+JobStoreTX initialized.
+Scheduler bound to RMI registry under name 'QuartzScheduler_$_NON_CLUSTERED'
+Scheduler meta-data: Quartz Scheduler (v2.2.1) 'QuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - access via RMI.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 2 threads.
+  Using job-store 'org.quartz.impl.jdbcjobstore.JobStoreTX' - which supports persistence. and is not clustered.
+
+Quartz scheduler 'QuartzScheduler' initialized from the specified file : 'com/kunxia/scheduler/config/quartz.properties' from the class resource path.
+Quartz scheduler version: 2.2.1
+Lock 'TRIGGER_ACCESS' is desired by: main
+Lock 'TRIGGER_ACCESS' is being obtained: main
+Lock 'TRIGGER_ACCESS' given to: main
+incremented pending_acquires: 1
+incremented pending_acquires: 2
+incremented pending_acquires: 3
+com.mchange.v2.resourcepool.BasicResourcePool@38afe297 config: [start -> 3; min -> 1; max -> 10; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; mox_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge73f9c1820976i7ehyw|1a451d4d, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge73f9c1820976i7ehyw|1a451d4d, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://kunxia.com:3306/quartz, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 120, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+awaitAvailable(): [unknown]
+trace com.mchange.v2.resourcepool.BasicResourcePool@38afe297 [managed: 0, unused: 0, excluded: 0]
+checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@7bd5e7f8.acquireResource() returning. 
+checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@7bd5e7f8.acquireResource() returning. 
+trace com.mchange.v2.resourcepool.BasicResourcePool@38afe297 [managed: 1, unused: 1, excluded: 0]
+decremented pending_acquires: 2
+checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@7bd5e7f8.acquireResource() returning. 
+trace com.mchange.v2.resourcepool.BasicResourcePool@38afe297 [managed: 2, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@539a4612)
+decremented pending_acquires: 1
+trace com.mchange.v2.resourcepool.BasicResourcePool@38afe297 [managed: 3, unused: 3, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@539a4612)
+decremented pending_acquires: 0
+trace com.mchange.v2.resourcepool.BasicResourcePool@38afe297 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@539a4612)
+Adding TriggerPersistenceDelegate of type: org.quartz.impl.jdbcjobstore.SimpleTriggerPersistenceDelegate
+Adding TriggerPersistenceDelegate of type: org.quartz.impl.jdbcjobstore.CronTriggerPersistenceDelegate
+Adding TriggerPersistenceDelegate of type: org.quartz.impl.jdbcjobstore.CalendarIntervalTriggerPersistenceDelegate
+Adding TriggerPersistenceDelegate of type: org.quartz.impl.jdbcjobstore.DailyTimeIntervalTriggerPersistenceDelegate
+cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@292ea723 ).size(): 1
+checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 1; checked out: 1; num connections: 1; num keys: 1
+checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 1; checked out: 0; num connections: 1; num keys: 1
+com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache ----> CACHE HIT
+checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 1; checked out: 1; num connections: 1; num keys: 1
+checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 1; checked out: 0; num connections: 1; num keys: 1
+Freed 1 triggers from 'acquired' / 'blocked' state.
+cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@292ea723 ).size(): 2
+checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 2; checked out: 1; num connections: 1; num keys: 2
+checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 2; checked out: 0; num connections: 1; num keys: 2
+Handling 1 trigger(s) that missed their scheduled fire-time.
+cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@292ea723 ).size(): 3
+checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 3; checked out: 1; num connections: 1; num keys: 3
+cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@292ea723 ).size(): 4
+checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 4; checked out: 2; num connections: 1; num keys: 4
+checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 4; checked out: 1; num connections: 1; num keys: 4
+checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 4; checked out: 0; num connections: 1; num keys: 4
+cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@292ea723 ).size(): 5
+checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 5; checked out: 1; num connections: 1; num keys: 5
+checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 5; checked out: 0; num connections: 1; num keys: 5
+cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@292ea723 ).size(): 6
+checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 6; checked out: 1; num connections: 1; num keys: 6
+checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 6; checked out: 0; num connections: 1; num keys: 6
+com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache ----> CACHE HIT
+checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 6; checked out: 1; num connections: 1; num keys: 6
+checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 6; checked out: 0; num connections: 1; num keys: 6
+cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@292ea723 ).size(): 7
+checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 7; checked out: 1; num connections: 1; num keys: 7
+checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 7; checked out: 0; num connections: 1; num keys: 7
+cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@292ea723 ).size(): 8
+checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 8; checked out: 1; num connections: 1; num keys: 8
+cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@292ea723 ).size(): 9
+checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 9; checked out: 2; num connections: 1; num keys: 9
+checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 9; checked out: 1; num connections: 1; num keys: 9
+checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 9; checked out: 0; num connections: 1; num keys: 9
+cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@292ea723 ).size(): 10
+checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 10; checked out: 1; num connections: 1; num keys: 10
+checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 10; checked out: 0; num connections: 1; num keys: 10
+Recovering 0 jobs that were in-progress at the time of the last shut-down.
+Recovery complete.
+cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@292ea723 ).size(): 11
+checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 11; checked out: 1; num connections: 1; num keys: 11
+checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 11; checked out: 0; num connections: 1; num keys: 11
+Removed 0 'complete' triggers.
+cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@292ea723 ).size(): 12
+checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 12; checked out: 1; num connections: 1; num keys: 12
+checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 12; checked out: 0; num connections: 1; num keys: 12
+Removed 1 stale fired job entries.
+Lock 'TRIGGER_ACCESS' retuned by: main
+checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 12; checked out: 0; num connections: 1; num keys: 12
+trace com.mchange.v2.resourcepool.BasicResourcePool@38afe297 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@539a4612)
+JobStore background threads started (as scheduler was started).
+Scheduler QuartzScheduler_$_NON_CLUSTERED started.
+checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 12; checked out: 0; num connections: 1; num keys: 12
+trace com.mchange.v2.resourcepool.BasicResourcePool@38afe297 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@539a4612)
+MisfireHandler: scanning for misfires...
+trace com.mchange.v2.resourcepool.BasicResourcePool@38afe297 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@539a4612)
+cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@292ea723 ).size(): 13
+checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 13; checked out: 1; num connections: 1; num keys: 13
+cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@ccd2911 ).size(): 1
+checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 14; checked out: 2; num connections: 2; num keys: 14
+checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 14; checked out: 1; num connections: 2; num keys: 14
+Found 0 triggers that missed their scheduled fire-time.
+checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 14; checked out: 0; num connections: 2; num keys: 14
+com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache ----> CACHE HIT
+checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 14; checked out: 1; num connections: 2; num keys: 14
+checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 14; checked out: 1; num connections: 2; num keys: 14
+trace com.mchange.v2.resourcepool.BasicResourcePool@38afe297 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@539a4612)
+checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 14; checked out: 1; num connections: 2; num keys: 14
+com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache ----> CACHE HIT
+checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 14; checked out: 2; num connections: 2; num keys: 14
+checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 14; checked out: 1; num connections: 2; num keys: 14
+checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 14; checked out: 0; num connections: 2; num keys: 14
+com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache ----> CACHE HIT
+checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 14; checked out: 1; num connections: 2; num keys: 14
+checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 14; checked out: 0; num connections: 2; num keys: 14
+cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@292ea723 ).size(): 14
+checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 15; checked out: 1; num connections: 2; num keys: 15
+checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 15; checked out: 0; num connections: 2; num keys: 15
+cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@292ea723 ).size(): 15
+checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 16; checked out: 1; num connections: 2; num keys: 16
+checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 16; checked out: 0; num connections: 2; num keys: 16
+checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 16; checked out: 0; num connections: 2; num keys: 16
+trace com.mchange.v2.resourcepool.BasicResourcePool@38afe297 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@539a4612)
+batch acquisition of 1 triggers
+checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 16; checked out: 0; num connections: 2; num keys: 16
+Lock 'TRIGGER_ACCESS' is desired by: QuartzScheduler_QuartzSchedulerThread
+Lock 'TRIGGER_ACCESS' is being obtained: QuartzScheduler_QuartzSchedulerThread
+Lock 'TRIGGER_ACCESS' given to: QuartzScheduler_QuartzSchedulerThread
+trace com.mchange.v2.resourcepool.BasicResourcePool@38afe297 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@539a4612)
+cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@292ea723 ).size(): 16
+checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 17; checked out: 1; num connections: 2; num keys: 17
+checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 17; checked out: 0; num connections: 2; num keys: 17
+com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache ----> CACHE HIT
+checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 17; checked out: 1; num connections: 2; num keys: 17
+checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 17; checked out: 0; num connections: 2; num keys: 17
+cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@292ea723 ).size(): 17
+checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 18; checked out: 1; num connections: 2; num keys: 18
+checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 18; checked out: 0; num connections: 2; num keys: 18
+com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache ----> CACHE HIT
+checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 18; checked out: 1; num connections: 2; num keys: 18
+checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 18; checked out: 0; num connections: 2; num keys: 18
+com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache ----> CACHE HIT
+checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 18; checked out: 1; num connections: 2; num keys: 18
+com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache ----> CACHE HIT
+checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 18; checked out: 2; num connections: 2; num keys: 18
+checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 18; checked out: 1; num connections: 2; num keys: 18
+checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 18; checked out: 0; num connections: 2; num keys: 18
+Lock 'TRIGGER_ACCESS' retuned by: QuartzScheduler_QuartzSchedulerThread
+checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 18; checked out: 0; num connections: 2; num keys: 18
+trace com.mchange.v2.resourcepool.BasicResourcePool@38afe297 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@539a4612)
+checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 18; checked out: 0; num connections: 2; num keys: 18
+Producing instance of Job 'adminJobs.reservationSchedulerJob', class=com.kunxia.scheduler.job.ReservationSchedulerJob
+trace com.mchange.v2.resourcepool.BasicResourcePool@38afe297 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@539a4612)
+Calling execute on job adminJobs.reservationSchedulerJob
+Returning cached instance of singleton bean 'reservationDAO'
+Executing SQL query [SELECT * FROM RESERVATIONS]
+Fetching JDBC Connection from DataSource
+Creating new JDBC DriverManager Connection to [jdbc:mysql://kunxia.com:3306/quartz]
+com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache ----> CACHE HIT
+checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 18; checked out: 1; num connections: 2; num keys: 18
+checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 18; checked out: 0; num connections: 2; num keys: 18
+com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache ----> CACHE HIT
+checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 18; checked out: 1; num connections: 2; num keys: 18
+com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache ----> CACHE HIT
+checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 18; checked out: 2; num connections: 2; num keys: 18
+checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 18; checked out: 1; num connections: 2; num keys: 18
+checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 18; checked out: 0; num connections: 2; num keys: 18
+com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache ----> CACHE HIT
+checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 18; checked out: 1; num connections: 2; num keys: 18
+checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 18; checked out: 0; num connections: 2; num keys: 18
+com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache ----> CACHE HIT
+checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 18; checked out: 1; num connections: 2; num keys: 18
+checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 18; checked out: 0; num connections: 2; num keys: 18
+com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache ----> CACHE HIT
+checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 18; checked out: 1; num connections: 2; num keys: 18
+checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 18; checked out: 0; num connections: 2; num keys: 18
+checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 18; checked out: 0; num connections: 2; num keys: 18
+trace com.mchange.v2.resourcepool.BasicResourcePool@38afe297 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@539a4612)
+batch acquisition of 1 triggers
+checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 18; checked out: 0; num connections: 2; num keys: 18
+Returning JDBC Connection to DataSource
+Lock 'TRIGGER_ACCESS' is desired by: QuartzScheduler_Worker-1
+Lock 'TRIGGER_ACCESS' is being obtained: QuartzScheduler_Worker-1
+Lock 'TRIGGER_ACCESS' given to: QuartzScheduler_Worker-1
+trace com.mchange.v2.resourcepool.BasicResourcePool@38afe297 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@539a4612)
+cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@292ea723 ).size(): 18
+checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 19; checked out: 1; num connections: 2; num keys: 19
+checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 19; checked out: 0; num connections: 2; num keys: 19
+Lock 'TRIGGER_ACCESS' retuned by: QuartzScheduler_Worker-1
+checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 19; checked out: 0; num connections: 2; num keys: 19
+trace com.mchange.v2.resourcepool.BasicResourcePool@38afe297 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@539a4612)
+checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 19; checked out: 0; num connections: 2; num keys: 19
+Lock 'TRIGGER_ACCESS' is desired by: QuartzScheduler_QuartzSchedulerThread
+Lock 'TRIGGER_ACCESS' is being obtained: QuartzScheduler_QuartzSchedulerThread
+Lock 'TRIGGER_ACCESS' given to: QuartzScheduler_QuartzSchedulerThread
+trace com.mchange.v2.resourcepool.BasicResourcePool@38afe297 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@539a4612)
+com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache ----> CACHE HIT
+checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 19; checked out: 1; num connections: 2; num keys: 19
+checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 19; checked out: 0; num connections: 2; num keys: 19
+com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache ----> CACHE HIT
+checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 19; checked out: 1; num connections: 2; num keys: 19
+checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 19; checked out: 0; num connections: 2; num keys: 19
+com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache ----> CACHE HIT
+checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 19; checked out: 1; num connections: 2; num keys: 19
+checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 19; checked out: 0; num connections: 2; num keys: 19
+com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache ----> CACHE HIT
+checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 19; checked out: 1; num connections: 2; num keys: 19
+checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 19; checked out: 0; num connections: 2; num keys: 19
+com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache ----> CACHE HIT
+checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 19; checked out: 1; num connections: 2; num keys: 19
+com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache ----> CACHE HIT
+checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 19; checked out: 2; num connections: 2; num keys: 19
+checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 19; checked out: 1; num connections: 2; num keys: 19
+checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 19; checked out: 0; num connections: 2; num keys: 19
+Lock 'TRIGGER_ACCESS' retuned by: QuartzScheduler_QuartzSchedulerThread
+checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 19; checked out: 0; num connections: 2; num keys: 19
+trace com.mchange.v2.resourcepool.BasicResourcePool@38afe297 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@539a4612)
+Producing instance of Job 'adminJobs.reservationSchedulerJob', class=com.kunxia.scheduler.job.ReservationSchedulerJob
+checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 19; checked out: 0; num connections: 2; num keys: 19
+trace com.mchange.v2.resourcepool.BasicResourcePool@38afe297 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@539a4612)
+Calling execute on job adminJobs.reservationSchedulerJob
+Returning cached instance of singleton bean 'reservationDAO'
+Executing SQL query [SELECT * FROM RESERVATIONS]
+Fetching JDBC Connection from DataSource
+Creating new JDBC DriverManager Connection to [jdbc:mysql://kunxia.com:3306/quartz]
+cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@ccd2911 ).size(): 2
+checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 20; checked out: 1; num connections: 2; num keys: 20
+checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 20; checked out: 0; num connections: 2; num keys: 20
+cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@ccd2911 ).size(): 3
+checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 21; checked out: 1; num connections: 2; num keys: 21
+cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@ccd2911 ).size(): 4
+checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 22; checked out: 2; num connections: 2; num keys: 22
+checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 22; checked out: 1; num connections: 2; num keys: 22
+checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 22; checked out: 0; num connections: 2; num keys: 22
+cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@ccd2911 ).size(): 5
+checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 23; checked out: 1; num connections: 2; num keys: 23
+checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 23; checked out: 0; num connections: 2; num keys: 23
+cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@ccd2911 ).size(): 6
+checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 24; checked out: 1; num connections: 2; num keys: 24
+checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 24; checked out: 0; num connections: 2; num keys: 24
+cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@ccd2911 ).size(): 7
+checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 25; checked out: 1; num connections: 2; num keys: 25
+checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 25; checked out: 0; num connections: 2; num keys: 25
+Returning JDBC Connection to DataSource
+Lock 'TRIGGER_ACCESS' is desired by: QuartzScheduler_Worker-2
+Lock 'TRIGGER_ACCESS' is being obtained: QuartzScheduler_Worker-2
+Lock 'TRIGGER_ACCESS' given to: QuartzScheduler_Worker-2
+trace com.mchange.v2.resourcepool.BasicResourcePool@38afe297 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@539a4612)
+checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 25; checked out: 0; num connections: 2; num keys: 25
+trace com.mchange.v2.resourcepool.BasicResourcePool@38afe297 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@539a4612)
+batch acquisition of 1 triggers
+checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 25; checked out: 0; num connections: 2; num keys: 25
+com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache ----> CACHE HIT
+checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 25; checked out: 1; num connections: 2; num keys: 25
+checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 25; checked out: 0; num connections: 2; num keys: 25
+Lock 'TRIGGER_ACCESS' retuned by: QuartzScheduler_Worker-2
+checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 25; checked out: 0; num connections: 2; num keys: 25
+trace com.mchange.v2.resourcepool.BasicResourcePool@38afe297 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@539a4612)
+checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 25; checked out: 0; num connections: 2; num keys: 25

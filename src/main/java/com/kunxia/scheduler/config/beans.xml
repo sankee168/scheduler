@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context-4.2.xsd">
+
+	<context:component-scan base-package="com.kunxia.scheduler" />
+
+	<context:property-placeholder
+		location="com/kunxia/scheduler/config/application.properties" />
+	<bean class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
+	<property name="targetClass" value="org.springframework.util.Log4jConfigurer" />
+	<property name="targetMethod" value="initLogging" />
+	<property name="arguments">
+		<list>
+			<value>classpath:com/kunxia/scheduler/config/log4j.properties</value>
+		</list>
+	</property>
+</bean>
+<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://kunxia.com:3306/quartz" />
+		<property name="username" value="kunx" />
+		<property name="password" value="241104" />
+	</bean>
+	<bean id="reservationDAO" class="com.kunxia.scheduler.dao.ReservationDAOImpl">    
+	</bean>
+   <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+      <property name="dataSource"  ref="dataSource" />    
+   </bean>
+   <bean id="reservationSchedulerJob" class="org.springframework.scheduling.quartz.JobDetailFactoryBean">
+        <property name="jobClass" value="com.kunxia.scheduler.job.ReservationSchedulerJob" />
+        <property name="jobDataAsMap">
+            <map>
+              <entry key="timeout" value="5" />
+            </map>
+        </property>
+   </bean>
+  <bean id="twilloClient" class="com.kunxia.scheduler.twillo.TwilloClient">  
+   </bean>
+</beans>
