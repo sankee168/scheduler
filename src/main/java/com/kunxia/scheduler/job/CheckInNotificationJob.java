@@ -19,21 +19,24 @@ public class CheckInNotificationJob implements Job{
 			throws JobExecutionException {
 		TwilloClient twilloClient = (TwilloClient) App.appContext.getBean("twilloClient");
 		JobDataMap jobDataMap = context.getMergedJobDataMap();
-		String guestEmail = jobDataMap.getString("guestEmail");
+
 		String guestPhone = jobDataMap.getString("guestPhone");
 		String guestName = jobDataMap.getString("guestName");
 		
 		if(StringUtils.isNotEmpty(guestPhone)){
+			String notification = "";
 			if(StringUtils.isNotEmpty(guestName)){
-				String notification = "Dear "+guestName+", this is an automatic reminder to check-in Chloe's flat "
-						+ "today at 535 Canton Rd, Suite 6C, Hong Kong SAR."
+				 notification = "Dear "+guestName+", this is an automatic reminder to check-in Chloe's Suite "
+						+ "tomorrow at 535 Canton Rd, Suite 6C, Hong Kong SAR."
 						+ "If you've any questions, feel free to reach Chloe at +852 9513 4248";
-				twilloClient.sendSmsMessage(guestPhone, guestName, notification);
 			}else{
-				String notification = "Dear guest, this is an automatic reminder to check-in Chloe's flat "
-						+ "today at 535 Canton Rd, Suite 6C, Hong Kong SAR."
+				 notification = "Dear guest, this is an automatic reminder to check-in Chloe's Suite "
+						+ "tomorrow at 535 Canton Rd, Suite 6C, Hong Kong SAR."
 						+ "If you've any questions, feel free to reach Chloe at +852 9513 4248";
+			}
+			if(StringUtils.isNotEmpty(notification)){
 				twilloClient.sendSmsMessage(guestPhone, guestName, notification);
+				twilloClient.sendSmsMessage("+852 9513 4248", "Chloe", "Please be noticed your guest "+guestName+" has been notified to checkin tomorrow. Please clean the room and arrange the access card pickup accordingly.");
 			}
 		}
 	}
