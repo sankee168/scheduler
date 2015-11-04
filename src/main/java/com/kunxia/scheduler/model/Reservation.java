@@ -1,9 +1,5 @@
 package com.kunxia.scheduler.model;
 
-import java.sql.Date;
-
-import org.joda.time.DateTime;
-
 public class Reservation {
 
 	private int id;
