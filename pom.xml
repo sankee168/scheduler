@@ -13,7 +13,12 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-
+	<repositories>
+		<repository>
+			<id>jpushbullet</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+		</repository>
+	</repositories>
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -92,6 +97,44 @@
 			<artifactId>spring-data-jpa</artifactId>
 			<version>1.9.0.RELEASE</version>
 		</dependency>
+		<dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.3.6</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>commons-logging</groupId>
+                    <artifactId>commons-logging</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpmime</artifactId>
+            <version>4.3.6</version>
+        </dependency>
+<dependency>
+	<groupId>org.apache.httpcomponents</groupId>
+	<artifactId>httpcore</artifactId>
+	<version>4.4.3</version>
+</dependency>
+
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.3.1</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.websocket</groupId>
+            <artifactId>javax.websocket-api</artifactId>
+            <version>1.1</version>
+        </dependency>
+		<dependency>
+			<groupId>net.iharder.jpushbullet2</groupId>
+			<artifactId>jpushbullet2</artifactId>
+			<version>0.3.0-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<finalName>scheduler</finalName>
@@ -117,20 +160,20 @@
 					</descriptorRefs>
 					<!-- MainClass in mainfest make a executable jar -->
 					<archive>
-					  <manifest>
-						<mainClass>com.kunxia.scheduler.App</mainClass>
-					  </manifest>
+						<manifest>
+							<mainClass>com.kunxia.scheduler.App</mainClass>
+						</manifest>
 					</archive>
 
 				</configuration>
 				<executions>
-				  <execution>
-                  <!-- bind to the packaging phase -->
-					<phase>package</phase> 
-					<goals>
-						<goal>single</goal>
-					</goals>
-				  </execution>
+					<execution>
+						<!-- bind to the packaging phase -->
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
 				</executions>
 			</plugin>
 

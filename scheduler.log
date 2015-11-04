@@ -1,15 +1,15 @@
-[INFO ] 2015-10-25 23:14:01,791 org.springframework.jdbc.datasource.DriverManagerDataSource - Loaded JDBC driver: com.mysql.jdbc.Driver
-[INFO ] 2015-10-25 23:14:01,883 com.kunxia.scheduler.QuartzServer - Starting Scheduler 1.0.0...
-[INFO ] 2015-10-25 23:14:01,950 com.mchange.v2.log.MLog - MLog clients using log4j logging.
-[INFO ] 2015-10-25 23:14:02,609 com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.1.1 [built 15-March-2007 01:32:31; debug? true; trace: 10]
-[INFO ] 2015-10-25 23:14:02,655 org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
-[INFO ] 2015-10-25 23:14:02,683 org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
-[INFO ] 2015-10-25 23:14:02,683 org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
-[INFO ] 2015-10-25 23:14:02,684 org.quartz.core.QuartzScheduler - JobFactory set to: org.quartz.simpl.SimpleJobFactory@6025e1b6
-[INFO ] 2015-10-25 23:14:02,685 org.quartz.impl.jdbcjobstore.JobStoreTX - Using thread monitor-based data access locking (synchronization).
-[INFO ] 2015-10-25 23:14:02,686 org.quartz.impl.jdbcjobstore.JobStoreTX - JobStoreTX initialized.
-[INFO ] 2015-10-25 23:14:03,815 org.quartz.core.QuartzScheduler - Scheduler bound to RMI registry under name 'QuartzScheduler_$_NON_CLUSTERED'
-[INFO ] 2015-10-25 23:14:03,816 org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'QuartzScheduler' with instanceId 'NON_CLUSTERED'
+[INFO ] 2015-11-01 20:29:56,307 org.springframework.jdbc.datasource.DriverManagerDataSource - Loaded JDBC driver: com.mysql.jdbc.Driver
+[INFO ] 2015-11-01 20:29:57,044 com.kunxia.scheduler.QuartzServer - Starting Scheduler 1.0.0...
+[INFO ] 2015-11-01 20:29:57,103 com.mchange.v2.log.MLog - MLog clients using log4j logging.
+[INFO ] 2015-11-01 20:29:57,199 com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.1.1 [built 15-March-2007 01:32:31; debug? true; trace: 10]
+[INFO ] 2015-11-01 20:29:57,241 org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+[INFO ] 2015-11-01 20:29:57,263 org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[INFO ] 2015-11-01 20:29:57,263 org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+[INFO ] 2015-11-01 20:29:57,264 org.quartz.core.QuartzScheduler - JobFactory set to: org.quartz.simpl.SimpleJobFactory@ea6147e
+[INFO ] 2015-11-01 20:29:57,264 org.quartz.impl.jdbcjobstore.JobStoreTX - Using thread monitor-based data access locking (synchronization).
+[INFO ] 2015-11-01 20:29:57,265 org.quartz.impl.jdbcjobstore.JobStoreTX - JobStoreTX initialized.
+[INFO ] 2015-11-01 20:29:58,352 org.quartz.core.QuartzScheduler - Scheduler bound to RMI registry under name 'QuartzScheduler_$_NON_CLUSTERED'
+[INFO ] 2015-11-01 20:29:58,354 org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'QuartzScheduler' with instanceId 'NON_CLUSTERED'
   Scheduler class: 'org.quartz.core.QuartzScheduler' - access via RMI.
   NOT STARTED.
   Currently in standby mode.
@@ -17,12 +17,110 @@
   Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 2 threads.
   Using job-store 'org.quartz.impl.jdbcjobstore.JobStoreTX' - which supports persistence. and is not clustered.
 
-[INFO ] 2015-10-25 23:14:03,817 org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'QuartzScheduler' initialized from the specified file : 'quartz.properties' from the class resource path.
-[INFO ] 2015-10-25 23:14:03,817 org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
-[INFO ] 2015-10-25 23:14:03,907 com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge73f9c189u1zpwq4rco|384ad17b, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge73f9c189u1zpwq4rco|384ad17b, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://kunxia.com:3306/quartz, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 120, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
-[INFO ] 2015-10-25 23:14:04,669 org.quartz.impl.jdbcjobstore.JobStoreTX - Freed 1 triggers from 'acquired' / 'blocked' state.
-[INFO ] 2015-10-25 23:14:04,750 org.quartz.impl.jdbcjobstore.JobStoreTX - Recovering 0 jobs that were in-progress at the time of the last shut-down.
-[INFO ] 2015-10-25 23:14:04,751 org.quartz.impl.jdbcjobstore.JobStoreTX - Recovery complete.
-[INFO ] 2015-10-25 23:14:04,786 org.quartz.impl.jdbcjobstore.JobStoreTX - Removed 0 'complete' triggers.
-[INFO ] 2015-10-25 23:14:04,826 org.quartz.impl.jdbcjobstore.JobStoreTX - Removed 2 stale fired job entries.
-[INFO ] 2015-10-25 23:14:04,903 org.quartz.core.QuartzScheduler - Scheduler QuartzScheduler_$_NON_CLUSTERED started.
+[INFO ] 2015-11-01 20:29:58,354 org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'QuartzScheduler' initialized from the specified file : 'quartz.properties' from the class resource path.
+[INFO ] 2015-11-01 20:29:58,354 org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+[INFO ] 2015-11-01 20:29:58,452 com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge73f9c1i420b81ex4dby|a1cdc6d, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge73f9c1i420b81ex4dby|a1cdc6d, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://kunxia.com:3306/quartz, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 120, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO ] 2015-11-01 20:29:59,311 org.quartz.impl.jdbcjobstore.JobStoreTX - Freed 2 triggers from 'acquired' / 'blocked' state.
+[INFO ] 2015-11-01 20:29:59,397 org.quartz.impl.jdbcjobstore.JobStoreTX - Recovering 0 jobs that were in-progress at the time of the last shut-down.
+[INFO ] 2015-11-01 20:29:59,397 org.quartz.impl.jdbcjobstore.JobStoreTX - Recovery complete.
+[INFO ] 2015-11-01 20:29:59,437 org.quartz.impl.jdbcjobstore.JobStoreTX - Removed 0 'complete' triggers.
+[INFO ] 2015-11-01 20:29:59,476 org.quartz.impl.jdbcjobstore.JobStoreTX - Removed 2 stale fired job entries.
+[INFO ] 2015-11-01 20:29:59,561 org.quartz.core.QuartzScheduler - Scheduler QuartzScheduler_$_NON_CLUSTERED started.
+[INFO ] 2015-11-01 20:30:01,762 com.kunxia.scheduler.job.CheckPushesJob - Received 20 pushes
+[INFO ] 2015-11-01 20:30:01,762 com.kunxia.scheduler.job.CheckPushesJob - Ignored unsupported push type:file
+[INFO ] 2015-11-01 20:30:01,762 com.kunxia.scheduler.job.CheckPushesJob - Ignored unsupported push type:file
+[INFO ] 2015-11-01 20:30:01,763 com.kunxia.scheduler.job.CheckPushesJob - Ignored unsupported push type:file
+[INFO ] 2015-11-01 20:30:01,763 com.kunxia.scheduler.job.CheckPushesJob - Push Type:link Push content:http://m.xkcd.com/1592/
+[INFO ] 2015-11-01 20:30:01,763 com.kunxia.scheduler.job.CheckPushesJob - Push Type:link Push content:http://m.xkcd.com/1593/
+[INFO ] 2015-11-01 20:30:01,763 com.kunxia.scheduler.job.CheckPushesJob - Push Type:link Push content:http://m.xkcd.com/1594/
+[INFO ] 2015-11-01 20:30:01,763 com.kunxia.scheduler.job.CheckPushesJob - Push Type:link Push content:http://m.xkcd.com/1595/
+[INFO ] 2015-11-01 20:30:01,763 com.kunxia.scheduler.job.CheckPushesJob - Push Type:link Push content:http://m.xkcd.com/1596/
+[INFO ] 2015-11-01 20:30:01,763 com.kunxia.scheduler.job.CheckPushesJob - Push Type:note Push content:Chloe's Airbnb Listing: https://www.airbnb.com/rooms/7063834
+[INFO ] 2015-11-01 20:30:01,763 com.kunxia.scheduler.job.CheckPushesJob - Ignored unsupported push type:file
+[INFO ] 2015-11-01 20:30:10,766 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:30:20,758 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:30:31,008 com.kunxia.scheduler.job.CheckPushesJob - Received 1 pushes
+[INFO ] 2015-11-01 20:30:31,008 com.kunxia.scheduler.job.CheckPushesJob - Push Type:note Push content:Test push la
+[INFO ] 2015-11-01 20:30:40,771 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:30:50,760 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:31:00,756 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:31:10,820 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:31:20,750 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:31:31,284 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:31:40,776 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:31:51,269 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:32:00,886 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:32:10,985 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:32:20,866 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:32:31,048 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:32:40,761 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:32:50,941 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:33:00,749 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:33:10,762 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:33:20,800 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:33:30,762 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:33:40,766 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:33:50,961 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:34:00,816 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:34:10,774 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:34:20,794 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:34:30,745 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:34:40,758 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:34:50,749 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:35:00,772 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:35:10,748 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:35:20,765 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:35:30,759 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:35:40,758 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:35:50,858 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:36:00,948 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:36:10,801 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:36:20,845 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:36:30,771 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:36:40,764 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:36:50,820 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:37:00,788 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:37:10,760 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:37:20,893 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:37:30,787 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:37:40,853 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:37:50,765 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:38:00,745 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:38:10,751 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:38:20,751 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:38:30,744 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:38:40,755 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:38:50,754 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:39:00,760 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:39:10,860 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:39:20,759 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:39:30,746 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:39:40,796 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:39:50,757 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:40:00,745 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:40:10,879 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:40:20,768 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:40:30,817 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:40:40,778 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:40:50,775 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:41:00,770 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:41:10,859 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:41:20,750 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:41:30,753 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:41:40,751 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:41:50,754 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:42:00,741 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:42:10,753 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:42:20,757 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:42:30,748 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:42:40,787 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:42:50,758 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:43:00,879 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:43:10,750 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:43:20,832 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:43:30,761 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:43:40,753 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:43:50,754 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:44:00,748 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:44:10,981 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
+[INFO ] 2015-11-01 20:44:20,751 com.kunxia.scheduler.job.CheckPushesJob - Received 0 pushes
