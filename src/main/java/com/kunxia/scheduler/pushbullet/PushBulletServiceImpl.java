@@ -1,17 +1,11 @@
 package com.kunxia.scheduler.pushbullet;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.Future;
-
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-import com.kunxia.scheduler.job.CheckInNotificationJob;
-
-import net.iharder.jpushbullet2.Callback;
 import net.iharder.jpushbullet2.Push;
 import net.iharder.jpushbullet2.PushbulletClient;
 import net.iharder.jpushbullet2.PushbulletException;

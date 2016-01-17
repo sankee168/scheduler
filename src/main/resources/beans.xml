@@ -39,6 +39,7 @@
             </map>
         </property>
    </bean>
+   <bean id="applicationContextProvder" class="com.kunxia.scheduler.ApplicationContextProvider"/>
   <bean id="twilloClient" class="com.kunxia.scheduler.twillo.TwilloClient">  
    </bean>
    <bean id="pushBulletService" class="com.kunxia.scheduler.pushbullet.PushBulletServiceImpl">

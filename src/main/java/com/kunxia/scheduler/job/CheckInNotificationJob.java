@@ -6,18 +6,19 @@ import org.quartz.Job;
 import org.quartz.JobDataMap;
 import org.quartz.JobExecutionContext;
 import org.quartz.JobExecutionException;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
 
-import com.kunxia.scheduler.App;
-import com.kunxia.scheduler.dao.ReservationDAOImpl;
+import com.kunxia.scheduler.ApplicationContextProvider;
 import com.kunxia.scheduler.twillo.TwilloClient;
 
+
 public class CheckInNotificationJob implements Job{
-	private static final Logger logger = Logger
-			.getLogger(CheckInNotificationJob.class);
+	private static final Logger logger = Logger.getLogger(CheckInNotificationJob.class);
 	
 	public void execute(JobExecutionContext context)
 			throws JobExecutionException {
-		TwilloClient twilloClient = (TwilloClient) App.appContext.getBean("twilloClient");
+		TwilloClient twilloClient = (TwilloClient) ApplicationContextProvider.getApplicationContext().getBean("twilloClient");
 		JobDataMap jobDataMap = context.getMergedJobDataMap();
 
 		String guestPhone = jobDataMap.getString("guestPhone");

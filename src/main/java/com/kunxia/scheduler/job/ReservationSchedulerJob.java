@@ -1,10 +1,11 @@
 package com.kunxia.scheduler.job;
 
 import static org.quartz.JobBuilder.newJob;
+import static org.quartz.SimpleScheduleBuilder.simpleSchedule;
 import static org.quartz.TriggerBuilder.newTrigger;
-import static org.quartz.SimpleScheduleBuilder.*;
 
 import java.util.List;
+
 import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
 import org.joda.time.DateTime;
@@ -17,25 +18,24 @@ import org.quartz.SchedulerException;
 import org.quartz.SimpleTrigger;
 import org.quartz.Trigger;
 import org.quartz.impl.StdSchedulerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
 import org.springframework.scheduling.quartz.QuartzJobBean;
 import org.springframework.stereotype.Component;
 
-import com.kunxia.scheduler.App;
+import com.kunxia.scheduler.ApplicationContextProvider;
 import com.kunxia.scheduler.dao.ReservationDAOImpl;
 import com.kunxia.scheduler.model.Reservation;
 
 @Component
-public class ReservationSchedulerJob extends QuartzJobBean {
-	
-	
-		
+public class ReservationSchedulerJob extends QuartzJobBean {		
 	private static final Logger logger = Logger.getLogger(ReservationSchedulerJob.class);
 	
 	@Override
 	protected void executeInternal(JobExecutionContext context)
 			throws JobExecutionException {
 		
-		ReservationDAOImpl reservationDAO = (ReservationDAOImpl) App.appContext.getBean("reservationDAO");
+		ReservationDAOImpl reservationDAO = (ReservationDAOImpl) ApplicationContextProvider.getApplicationContext().getBean("reservationDAO");
 		List<Reservation> reservations = reservationDAO.findAllReservations();
 		try {
 			Scheduler scheduler = new StdSchedulerFactory("quartz.properties").getScheduler();
